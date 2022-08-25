@@ -22,26 +22,20 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        b0.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("geo:10.0603, 76.6352"));
-                Intent Chooser=intent.createChooser(intent,"launchMap");
-                startActivity(Chooser);
-            }
+        b0.setOnClickListener(view -> {
+            Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("geo:10.0603, 76.6352"));
+            Intent Chooser=intent.createChooser(intent,"launchMap");
+            startActivity(Chooser);
         });
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-                String to[]={"jacobyohannan191@gmail.com"};
-                intent.putExtra(Intent.EXTRA_EMAIL, to);
-                intent.putExtra(Intent.EXTRA_SUBJECT, "aNdRoId LaB");
-                Intent Chooser=intent.createChooser(intent,"launch Mail");
-                startActivity(Chooser);
-            }
+        b1.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+            String to[]={"jacobyohannan191@gmail.com"};
+            intent.putExtra(Intent.EXTRA_EMAIL, to);
+            intent.putExtra(Intent.EXTRA_SUBJECT, "aNdRoId LaB");
+            Intent Chooser=intent.createChooser(intent,"launch Mail");
+            startActivity(Chooser);
         });
 
 
