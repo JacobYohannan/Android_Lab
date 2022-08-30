@@ -4,37 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/E1"
-        android:layout_width="411dp"
-        android:layout_height="55dp"
-        android:layout_margin="30dp"
-        android:text="EditText"
-        tools:layout_editor_absoluteY="116dp" />
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
         <EditText
-            android:layout_width="142dp"
+            android:id="@+id/m1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp" />
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Mark 1"
+            android:inputType="number" />
 
-            <EditText
-                android:layout_width="142dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"/>
+        <EditText
+            android:id="@+id/m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Mark 2"
+            android:inputType="number" />
 
-            <EditText
-                android:layout_width="142dp"
-                android:layout_height="match_parent"
-                android:layout_margin="20dp"/>
+        <EditText
+            android:id="@+id/m3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Mark 3"
+            android:inputType="number" />
+    </LinearLayout>
 
-
-        </LinearLayout>
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calculate" />
 </LinearLayout>
