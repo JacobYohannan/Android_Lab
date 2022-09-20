@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/image1"
-        android:src="@drawable/IMG4"
+        android:src="@drawable/img2"
 
         />
 
@@ -18,7 +18,7 @@
         android:id="@+id/image2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/IMG3"
+        android:src="@drawable/img1"
 
         />
 
