@@ -1,55 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        android:hint="Name"
-        android:inputType="text"
-        android:id="@+id/e2"/>
-
-    <EditText
-        android:id="@+id/e3"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-
-        android:layout_gravity="center"
-        android:hint="Location"
-        android:inputType="text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:text="SQLite Databse"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:text="Insert"
         android:id="@+id/insert"
 
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         />
     <Button
-        android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:text="View"
-        android:id="@+id/view" />
+        android:id="@+id/view"
+        android:layout_gravity="center"/>
     <Button
-        android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:text="Delete"
-        android:id="@+id/del" />
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/t1"/>
-
+        android:id="@+id/del"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
