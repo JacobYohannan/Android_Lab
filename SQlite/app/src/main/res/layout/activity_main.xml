@@ -19,14 +19,16 @@
         android:hint="Name"
         android:inputType="text"
         android:id="@+id/e2"/>
+
     <EditText
+        android:id="@+id/e3"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
 
+        android:layout_gravity="center"
         android:hint="Location"
-        android:inputType="text"
-        android:id="@+id/e3"/>
+        android:inputType="text" />
+
     <Button
         android:layout_width="100dp"
         android:layout_height="40dp"
@@ -38,9 +40,12 @@
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:text="View"
-        android:id="@+id/view"
-
-        />
+        android:id="@+id/view" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Delete"
+        android:id="@+id/del" />
     <TextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"

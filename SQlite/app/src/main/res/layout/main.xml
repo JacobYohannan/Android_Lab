@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:text="SQLite Databse"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Insert"
+        android:id="@+id/insert"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="View"
+        android:id="@+id/view"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Delete"
+        android:id="@+id/del"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

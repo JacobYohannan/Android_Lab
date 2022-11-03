@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     MyHelper myhelper;
     EditText e2,e3;
     TextView t1;
-    Button insert, view;
+    Button insert, view, del;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         t1 = (TextView) findViewById(R.id.t1);
         view = (Button) findViewById(R.id.view);
         view.setOnClickListener(this);
+        del = (Button) findViewById(R.id.del);
+        del.setOnClickListener(this);
 
 
     }
@@ -56,8 +58,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String a = myhelper.getAllData();
             t1.setText(a);
         }
+        if (v.getId()==R.id.del){
 
+            int c = myhelper.deleteRow();
+            if (c>0)
+                Toast.makeText(this, "Deletion Successful", Toast.LENGTH_LONG).show();
+            else
+                Toast.makeText(this, "Maybe delete at a LATER time", Toast.LENGTH_LONG).show();
+        }
     }
+
+
 }
 
 class MyHelper extends SQLiteOpenHelper {
@@ -100,6 +111,14 @@ class MyHelper extends SQLiteOpenHelper {
         }
         return buffer.toString();
     }
+    public int deleteRow(){
+        //DELETE * FROM dept WHERE NAME = ?
+        SQLiteDatabase db = getWritableDatabase();
+
+        int count = db.delete("dept",null,null);
+        return count;
+    }
+
 
 
 }
