@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/fb"
+        android:layout_alignRight="@id/fb"
+        android:gravity="center"
+        android:text="FACEBOOK"
+        android:background="@color/material_dynamic_primary95"
+        android:layout_marginBottom="30dp"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/em"
+        android:layout_below="@id/fb"
+        android:text="EMAIL"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emed"
+        android:layout_below="@id/em"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pd"
+        android:layout_below="@id/emed"
+        android:text="PASSWORD"/>
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pd" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pwd"
+        android:id="@+id/ck"
+        android:layout_alignParentEnd="true"
+        android:text="SAVE LOGIN">
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ck"
+        android:layout_marginTop="21dp"
+        android:text="submit" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ck"
+        android:layout_alignRight="@id/b1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="178dp"
+        android:text="signup" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b2"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="NEED AN ACCOUNT /SIGNIN"
+        android:textColor="@color/design_default_color_primary_dark" />
+
+
+</RelativeLayout>

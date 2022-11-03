@@ -20,7 +20,7 @@
             android:layout_height="30dp"
             android:background="#97B1B5D3"
             android:text=""
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/text_dis2"
@@ -28,7 +28,7 @@
             android:layout_height="50dp"
             android:background="#6F7BA8A3"
             android:text=""
-            android:textSize="30dp" />
+            android:textSize="30sp" />
     </LinearLayout>
 
     <LinearLayout
