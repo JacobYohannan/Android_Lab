@@ -17,7 +17,7 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
         r2 = (ImageView) findViewById(R.id.image2);
         r1.setOnClickListener(this);
         r2.setOnClickListener(this);
-    }0
+    }
         @Override
         public void onClick(View v) {
             if(v.getId() == R.id.image1) {
